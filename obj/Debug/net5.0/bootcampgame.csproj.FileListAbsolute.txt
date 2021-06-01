@@ -1,0 +1,15 @@
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/bin/Debug/net5.0/bootcampgame.deps.json
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/bin/Debug/net5.0/bootcampgame.runtimeconfig.json
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/bin/Debug/net5.0/bootcampgame.runtimeconfig.dev.json
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/bin/Debug/net5.0/bootcampgame.dll
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/bin/Debug/net5.0/ref/bootcampgame.dll
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/bin/Debug/net5.0/bootcampgame.pdb
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/bootcampgame.csprojAssemblyReference.cache
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/bootcampgame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/bootcampgame.AssemblyInfoInputs.cache
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/bootcampgame.AssemblyInfo.cs
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/bootcampgame.csproj.CoreCompileInputs.cache
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/bootcampgame.dll
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/ref/bootcampgame.dll
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/bootcampgame.pdb
+/Users/johnjameshodgins/Documents/c#peojects/bootcampgame/obj/Debug/net5.0/bootcampgame.genruntimeconfig.cache
