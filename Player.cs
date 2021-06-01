@@ -15,5 +15,6 @@ namespace bootcampgame
         public int armourValue=0;
         public int potion=5;
         public int weaponValue= 1;
+        public int coin=0;
     }
 }

@@ -110,11 +110,24 @@ namespace bootcampgame
                        int potionValue= 5;
                        Console.WriteLine("You gain "+potionValue+" health");
                        Program.currentPlayer.health+= potionValue;
+                       
                    }
 
+                  
+
                 }
+                //deathcode
+                 Console.ReadKey();
+                   if(Program.currentPlayer.health<=0)
+                   {
+                       Console.WriteLine("You have been defeated by "+n);
+                       Console.ReadKey();
+                       System.Environment.Exit(0);
+                   }
+
                  int coinsReward= rand.Next(10,50);
-                Console.WriteLine("You defeated "+n)+" and you find "+ coinsReward+" coins";
+                 Program.currentPlayer.coin+=coinsReward;
+                Console.WriteLine("You defeated "+n+" and you find "+ coinsReward+" coins");
                 Console.ReadKey();
             }
            
@@ -135,7 +148,7 @@ namespace bootcampgame
                 case 4:
                     return "slow internet connection...monster";
                 default:
-                    return ""
+                    return "some legacy code..monster";
 
             }
         }
