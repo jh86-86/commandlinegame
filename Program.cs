@@ -9,9 +9,17 @@ namespace bootcampgame
     class Program
     {
         public static Player currentPlayer= new Player();
+        public static bool mainLoop= true;
+
         static void Main(string[] args)
         {
             Start();
+            Encounters.FirstEncounter();
+            while(mainLoop)
+            {
+                Encounters.RandomEncounter();
+            }
+
         }
 
         static void Start()
@@ -29,11 +37,11 @@ namespace bootcampgame
                 Console.ReadKey();
             };
 
-          Console.WriteLine("You find yourself sucked into the magical world of code via your computer. It is a green pasture and the sun is shining. You feel good that you have finally started the adventure but you have no idea what this adventure will bring.")  
+          Console.WriteLine("You find yourself sucked into the magical world of code via your computer. It is a green pasture and the sun is shining. You feel good that you have finally started the adventure but you have no idea what this adventure will bring."); 
           Console.ReadKey();
 
-          
-            
+
+
 
 
 
