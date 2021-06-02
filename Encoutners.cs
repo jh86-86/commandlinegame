@@ -16,6 +16,7 @@ namespace bootcampgame
 
         public static void FirstEncounter()
         {
+            //first fight
             Console.WriteLine("Upon the horizon, an enormous bug comes running at you. You prepare to fight it with you wits and limited knowledge of coding.");
             Console.ReadKey();
             Combat(false, "bug",1,1);
@@ -23,9 +24,30 @@ namespace bootcampgame
 
         public static void basicFightEncounter()
         {
+            //just random monsters
             Console.WriteLine("You have encountered a new foe");
             Console.ReadKey();
             Combat(true,"",0,0);
+        }
+
+        public static void BardEncounter()
+        {
+            //first boss fight
+            Console.Clear();
+            Program.currentPlayer.health=10;
+            Console.WriteLine("From the distance you can hear a faint melody");
+            Console.WriteLine("As you get closer you can see a bearded man with long hair strumming on lute");
+            Console.WriteLine($"As you get closer he is singing about 'getting oneself to the breakout rooms.'");
+            Console.WriteLine("The bard notices you. He puts down his lute and introduces himself:'Hi, I am grandmaster man. I task you with a challange. I need you to find my students and defeat the great nemesis of this land. I am grnadmaster and the furious cohort 5. I have lost my cohortiers. Of which you are one. You need to assemble them and fight your way through the next 13 weeks to your ultimate prize of stable employment in a junior tech role. Firstly though, we shall do battle to assess your skill");
+            Combat(false,"GrandMasterMan",2,4);
+            Console.WriteLine("Well done, I will increase your base health, attack and defense to prepare you for your journey");
+            Program.currentPlayer.baseHealth=20; //base health increase
+            Program.currentPlayer.health=20;
+            Console.WriteLine("You ask: 'Oh great bard. Do you have any advice for this hero as he sets out on his journey?");
+            Console.WriteLine("The bard looks at the sky solemnly and answers: 'If you get stuck check the microsoft docs.'");
+            Console.WriteLine("You take his advice and watch the bard leave as he sings a song about Javascript.");
+
+
         }
 
 
@@ -69,7 +91,7 @@ namespace bootcampgame
                 Console.WriteLine(n + " has "+ h +" health");
                 string input= Console.ReadLine();
                 if(input.ToLower() == "a"|| input.ToLower()=="attack")
-                {
+                {   //attack
                     Console.WriteLine("The enemy attacks you");
                     int damage= p- Program.currentPlayer.armourValue;
                     int attack= rand.Next(0, Program.currentPlayer.weaponValue)+ rand.Next(1,4);
@@ -79,6 +101,7 @@ namespace bootcampgame
                 }
                 else if(input.ToLower() == "d"|| input.ToLower()=="defend")
                 {
+                    //defense
                     Console.WriteLine("As"+n+" attack,You defend");
                     int damage= (p/4) - Program.currentPlayer.armourValue;
                     int attack= rand.Next(0, Program.currentPlayer.weaponValue)+ rand.Next(1,4);
@@ -100,6 +123,7 @@ namespace bootcampgame
                 }
                 else if(input.ToLower() == "h"|| input.ToLower()=="heal")
                 {
+                    //potion sequence
                    if(Program.currentPlayer.potion==0)
                    {
                        Console.WriteLine("You have no potions");
@@ -124,11 +148,13 @@ namespace bootcampgame
                        Console.ReadKey();
                        System.Environment.Exit(0);
                    }
-
+                //victory sequence
+                if(h<0){
                  int coinsReward= rand.Next(10,50);
                  Program.currentPlayer.coin+=coinsReward;
                 Console.WriteLine("You defeated "+n+" and you find "+ coinsReward+" coins");
                 Console.ReadKey();
+                }
             }
            
         }

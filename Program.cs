@@ -15,10 +15,9 @@ namespace bootcampgame
         {
             Start();
             Encounters.FirstEncounter();
-            while(mainLoop)
-            {
-                Encounters.RandomEncounter();
-            }
+            FightJourney();
+            Encounters.BardEncounter();
+          
 
         }
 
@@ -39,15 +38,16 @@ namespace bootcampgame
 
           Console.WriteLine("You find yourself sucked into the magical world of code via your computer. It is a green pasture and the sun is shining. You feel good that you have finally started the adventure but you have no idea what this adventure will bring."); 
           Console.ReadKey();
+        }
 
-
-
-
-
-
-
-
-
+        static void FightJourney()
+        {
+            var count=5;
+              while(count>0)
+            {
+                Encounters.RandomEncounter();
+                count--;
+            }
 
         }
     }
